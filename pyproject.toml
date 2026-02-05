@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wav-loop-resampler"
+version = "0.1.0"
+description = "Resample and/or process WAV files while preserving smpl loop points."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = ["wav", "audio", "resample", "loop", "smpl"]
+authors = [
+  {name = "Massimo Melina", email = "a@rejetto.com"},
+]
+
+dependencies = [
+  "numpy",
+  "scipy",
+  "soundfile",
+]
+
+[project.urls]
+Homepage = "https://github.com/rejetto/wav-loop-resampler"
+
+[project.scripts]
+wav-loop-resampler = "wav_loop_resampler:main"
